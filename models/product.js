@@ -9,15 +9,13 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  description: {
-    type: String,
-  },
-  category: {
-    type: String,
-  },
-  stock: {
+  quantity: {
     type: Number,
-    default: 0,
+    required: true,
+  },
+  date: {
+    type: Date,
+    default: Date.now,
   },
 });
 
